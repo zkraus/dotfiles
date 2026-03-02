@@ -8,3 +8,4 @@
 .zshrc
 .config/VSCodium/User/settings.json
 .config/VSCodium/User/keybindings.json
+.config/nvim/init.lua
