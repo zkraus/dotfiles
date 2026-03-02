@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #P
 
-fpath=($HOME/completion_zsh $fpath)
+fpath=(${HOME}/completion_zsh $fpath)
 
 autoload -U compinit; compinit
 
@@ -115,7 +115,7 @@ then
   source $(echo $JEDITERM_SOURCE)
   unset JEDITERM_SOURCE
 fi
-if [ ${HOME}/bin/oc ]; then
+if [ ${HOME}/bin/oc 2>/dev/null ]; then
   source <(oc completion zsh)
   compdef _oc oc
 fi
