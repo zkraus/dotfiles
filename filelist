@@ -11,3 +11,4 @@
 .config/nvim/init.lua
 .gitconfig
 src/rh/.gitconfig
+.zshenv
