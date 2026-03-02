@@ -1,0 +1,28 @@
+[user]
+    email = zdenek.kraus@gmail.com
+    name = Zdenek Kraus
+    signingkey = /home/zkraus/.ssh/id_rsa.pub
+
+[core]
+    editor = vim
+
+[includeIf "gitdir:~/src/rh/"]
+    path = ~/src/rh/.gitconfig
+
+
+[color]
+    ui = true
+
+[log]
+    date = iso
+
+[alias]
+    st = status -s
+    fixup = commit --fixup=HEAD
+
+[init]
+	defaultBranch = main
+[merge]
+	tool = meld
+[gpg]
+	format = ssh
