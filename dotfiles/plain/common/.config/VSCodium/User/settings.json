@@ -1,0 +1,24 @@
+{
+    "redhat.telemetry.enabled": false,
+    "python.createEnvironment.trigger": "off",
+    "explorer.compactFolders": false,
+    "vim.statusBarColors.visualline": "",
+    "editor.minimap.renderCharacters": false,
+    "workbench.iconTheme": "catppuccin-frappe",
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoTriggerNextSuggestion": true,
+    "workbench.startupEditor": "none",
+    "update.showReleaseNotes": false,
+    "shellformat.useEditorConfig": true,
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#606060"
+        },
+        {
+            "column": 120,
+            "color": "#9f0000"
+        }
+    ]
+}

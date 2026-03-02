@@ -6,3 +6,4 @@
 .vim/colors/zkraus.vim
 .oh-my-zsh/themes/zkraus.zsh-theme
 .zshrc
+.config/VSCodium/User/settings.json
