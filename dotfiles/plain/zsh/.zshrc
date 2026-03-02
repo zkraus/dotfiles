@@ -115,10 +115,6 @@ then
   source $(echo $JEDITERM_SOURCE)
   unset JEDITERM_SOURCE
 fi
-if [ ${HOME}/bin/oc 2>/dev/null ]; then
-  source <(oc completion zsh)
-  compdef _oc oc
-fi
 
 export EDITOR='/usr/bin/vim'
 if [[ -e /usr/bin/nvim ]]; then
