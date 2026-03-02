@@ -2,3 +2,5 @@
 .config/gtk-4.0/gtk.css
 .tmux.conf
 .tmux/mytheme.tmuxtheme
+.vimrc
+.vim/colors/zkraus.vim
