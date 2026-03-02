@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/zkraus/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -108,14 +108,14 @@ alias pdflatex='podman run -it --rm -v "${PWD}:/root/shared/folder:z" --name pdf
 alias bw="flatpak run --command=bw com.bitwarden.desktop"
 alias k="kubectl"
 
-export PATH="${PATH}:/home/zkraus/bin"
+export PATH="${PATH}:${HOME}/bin"
 
 if [ -n "$JEDITERM_SOURCE" ]
 then
   source $(echo $JEDITERM_SOURCE)
   unset JEDITERM_SOURCE
 fi
-if [ /home/zkraus/bin/oc ]; then
+if [ ${HOME}/bin/oc ]; then
   source <(oc completion zsh)
   compdef _oc oc
 fi
@@ -126,13 +126,13 @@ if [[ -e /usr/bin/nvim ]]; then
 fi
 
 # kuadrant qe ocp-tool
-export OCP_CLUSTER_MANAGEMENT_DIR="/home/zkraus/src/rh/ocp/cluster-management/"
-export OCP_TOOL_DIR="/home/zkraus/src/rh/ocp/ocp-tool"
+export OCP_CLUSTER_MANAGEMENT_DIR="${HOME}/src/rh/ocp/cluster-management/"
+export OCP_TOOL_DIR="${HOME}/src/rh/ocp/ocp-tool"
 if [[ -d ${OCP_CLUSTER_MANAGEMENT_DIR} ]]; then
 	source ${OCP_TOOL_DIR}/ocp.sh
 	source ${OCP_TOOL_DIR}/ocp.zsh.completion
 fi
 
-if [[ -e ~/.config/zkraus/zshrc_extra ]]; then
-	source ~/.config/zkraus/zshrc_extra
+if [[ -e ~/.config/${USER}/zshrc_extra ]]; then
+	source ~/.config/${USER}/zshrc_extra
 fi
