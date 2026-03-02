@@ -5,3 +5,4 @@
 .vimrc
 .vim/colors/zkraus.vim
 .oh-my-zsh/themes/zkraus.zsh-theme
+.zshrc
