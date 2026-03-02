@@ -7,3 +7,4 @@
 .oh-my-zsh/themes/zkraus.zsh-theme
 .zshrc
 .config/VSCodium/User/settings.json
+.config/VSCodium/User/keybindings.json
