@@ -1,2 +1,4 @@
 .config/gtk-3.0/gtk.css
 .config/gtk-4.0/gtk.css
+.tmux.conf
+.tmux/mytheme.tmuxtheme
