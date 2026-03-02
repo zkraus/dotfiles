@@ -219,7 +219,8 @@ function get_python_venv {
 function get_os_label {
     local os_label=""
     if which kubectl >/dev/null 2>/dev/null; then
-        os_label="$(kubectl config current-context)"
+        os_label="$(kubectl config current-context 2>/dev/null)"
+        [[ $? != 0 ]] && return
         if [[ $os_label =~ 'kind' ]]; then
             os_label="kind"
         elif [[ $os_label =~ 'kua-' ]]; then
