@@ -20,5 +20,9 @@
             "column": 120,
             "color": "#9f0000"
         }
-    ]
+    ],
+    "telemetry.feedback.enabled": false,
+    "make-task-provider.telemetry": false,
+    "yaml.schemas": {
+    }
 }
