@@ -1,0 +1,17 @@
+carlos-algms.make-task-provider
+catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc-icons
+christian-kohler.path-intellisense
+ericsia.pythonsnippets3
+foxundermoon.shell-format
+johnpapa.vscode-peacock
+ms-azuretools.vscode-containers
+ms-python.black-formatter
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-python-envs
+redhat.vscode-xml
+redhat.vscode-yaml
+repreng.csv
+samuelcolvin.jinjahtml
+vscodevim.vim

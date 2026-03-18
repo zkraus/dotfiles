@@ -10,7 +10,7 @@ root=zsh,vim,tmux
 
 .config/VSCodium/User/settings.json:vscodium
 .config/VSCodium/User/keybindings.json:vscodium
-.vscode-oss/extensions/extensions.json:vscodium
+.config/VSCodium/User/extensions.txt:vscodium
 
 
 .tmux.conf:tmux
