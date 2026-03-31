@@ -1,9 +1,11 @@
+anthropic.claude-code
 carlos-algms.make-task-provider
 catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
 christian-kohler.path-intellisense
 ericsia.pythonsnippets3
 foxundermoon.shell-format
+google.gemini-cli-vscode-ide-companion
 johnpapa.vscode-peacock
 ms-azuretools.vscode-containers
 ms-python.black-formatter
