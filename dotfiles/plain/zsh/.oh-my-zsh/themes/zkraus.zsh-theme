@@ -224,7 +224,7 @@ function get_os_label {
         if [[ $os_label =~ 'kind' ]]; then
             os_label="kind"
         elif [[ $os_label =~ 'kua-' ]]; then
-            os_label="$(echo "$os_label" | sed 's/^.*\(kua-[0-9]*\).*$/\1/')"
+          os_label="$(echo "$os_label" | sed 's/^.*\(kua\(-[0-9a-zA-Z_]*\)\{1,2\}\).*$/\1/')"
         fi
     fi
     echo "${os_label}"
