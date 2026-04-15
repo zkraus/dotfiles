@@ -1,7 +1,7 @@
 [user]
     email = zdenek.kraus@gmail.com
     name = Zdenek Kraus
-    signingkey = /home/zkraus/.ssh/id_rsa.pub
+	signingkey = 02B26AF82133A134
 
 [core]
     editor = vim
@@ -18,11 +18,13 @@
 
 [alias]
     st = status -s
-    fixup = commit --fixup=HEAD
+    fixup = commit -s --fixup=HEAD
 
 [init]
 	defaultBranch = main
 [merge]
 	tool = meld
-[gpg]
-	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true

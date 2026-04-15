@@ -1,4 +1,6 @@
 {
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block-outline",
     "redhat.telemetry.enabled": false,
     "python.createEnvironment.trigger": "off",
     "python.terminal.activateEnvironment": true,
@@ -7,6 +9,10 @@
     "editor.minimap.renderCharacters": false,
     "workbench.iconTheme": "catppuccin-frappe",
     "workbench.colorTheme": "Catppuccin Frappé",
+    "workbench.colorCustomizations": {
+        "editorCursor.background": "#303446",
+        "editorCursor.foreground": "#aaff00"
+    },
     "path-intellisense.extensionOnImport": true,
     "path-intellisense.autoTriggerNextSuggestion": true,
     "workbench.startupEditor": "none",
@@ -77,5 +83,8 @@
             "value": ""
         }
     ],
-    "editor.fontFamily": "DroidSansM Nerd Font Mono"
+    "editor.fontFamily": "DroidSansM Nerd Font Mono",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "claudeCode.preferredLocation": "panel",
+    "githubPullRequests.pullBranch": "never"
 }
