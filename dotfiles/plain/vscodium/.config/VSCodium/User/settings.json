@@ -13,6 +13,7 @@
         "editorCursor.background": "#303446",
         "editorCursor.foreground": "#aaff00"
     },
+    "files.trimTrailingWhitespace": true,
     "path-intellisense.extensionOnImport": true,
     "path-intellisense.autoTriggerNextSuggestion": true,
     "workbench.startupEditor": "none",
@@ -86,5 +87,8 @@
     "editor.fontFamily": "DroidSansM Nerd Font Mono",
     "diffEditor.ignoreTrimWhitespace": false,
     "claudeCode.preferredLocation": "panel",
-    "githubPullRequests.pullBranch": "never"
+    "githubPullRequests.pullBranch": "never",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }
