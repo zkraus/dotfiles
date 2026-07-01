@@ -1,0 +1,35 @@
+export PATH="${HOME}/bin:/usr/local/bin:${PATH}"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="false"
+DISABLE_CORRECTION="true"
+
+fpath=(${HOME}/completion_zsh $fpath)
+
+autoload -U compinit; compinit
+
+alias pdflatex='docker run -it --rm -v "${PWD}:/root/shared/folder:z" --name pdflatex pdflatex'
+alias bw="flatpak run --command=bw com.bitwarden.desktop"
+alias k="kubectl"
+alias vi="vim"
+
+export EDITOR='/usr/bin/vim'
+if [[ -e /usr/bin/nvim ]]; then
+    export EDITOR='/usr/bin/nvim'
+    alias vim="nvim"
+	alias vi="nvim"
+fi
+
+# kuadrant qe ocp-tool
+export OCP_CLUSTER_MANAGEMENT_DIR="${HOME}/src/rh/ocp/cluster-management/"
+export OCP_TOOL_DIR="${HOME}/src/rh/ocp/ocp-tool"
+if [[ -d ${OCP_CLUSTER_MANAGEMENT_DIR} ]]; then
+	source ${OCP_TOOL_DIR}/ocp.sh
+	source ${OCP_TOOL_DIR}/ocp.zsh.completion
+fi
+
+if [[ -e ~/.config/${USER}/zshrc_extra ]]; then
+	source ~/.config/${USER}/zshrc_extra
+fi
+
+eval "$(starship init zsh)"

@@ -1,0 +1,30 @@
+[user]
+    email = zdenek.kraus@gmail.com
+    name = Zdenek Kraus
+	signingkey = 02B26AF82133A134
+
+[core]
+    editor = vim
+
+[includeIf "gitdir:~/src/rh/"]
+    path = ~/.gitconfig_rh
+
+
+[color]
+    ui = true
+
+[log]
+    date = iso
+
+[alias]
+    st = status -s
+    fixup = commit -s --fixup=HEAD
+
+[init]
+	defaultBranch = main
+[merge]
+	tool = meld
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true

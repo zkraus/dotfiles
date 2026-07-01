@@ -1,0 +1,27 @@
+[/]
+audible-bell=false
+cursor-blink-mode='off'
+default-columns=uint32 140
+default-profile-uuid='8b16cb79dec20d63796c5b016985a7d7'
+default-rows=uint32 42
+enable-a11y=false
+font-name='DroidSansM Nerd Font 12'
+profile-uuids=['7146e701ad081e620c4386266985a339', '8b16cb79dec20d63796c5b016985a7d7']
+restore-window-size=false
+scrollbar-policy='never'
+use-system-font=false
+window-size=(uint32 140, uint32 42)
+
+[Profiles/7146e701ad081e620c4386266985a339]
+label='term dark'
+opacity=1.0
+palette='Vs Code'
+
+[Profiles/8b16cb79dec20d63796c5b016985a7d7]
+custom-command='tmux -u'
+label='tmux dark'
+palette='Catppuccin Frappé'
+use-custom-command=true
+
+[Shortcuts]
+primary-menu=''

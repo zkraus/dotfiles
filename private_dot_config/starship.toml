@@ -1,0 +1,93 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_metrics\
+$git_status\
+$git_state\
+$cmd_duration\
+$line_break\
+$character"""
+
+right_format = """
+$python
+$kubernetes
+"""
+
+scan_timeout = 10
+add_newline = false
+
+#palette = 'catppuccin_mocha'
+
+[username]
+show_always = false
+style_user = "bold fg:green"
+style_root = "bold fg:red"
+format = '[$user]($style)'
+
+[hostname]
+disabled = false
+ssh_only = true
+style = "bold fg:green"
+ssh_symbol = "@"
+
+[directory]
+style = "bold fg:blue"
+#format = "[ $path]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+#symbol = ""
+symbol = ""
+style = ""
+format = '[$symbol](fg:black)$branch'
+
+[git_status]
+ahead="[+$count](fg:green)"
+behind="[-$count](fg:red)"
+
+staged="[A](fg:green)"
+renamed="[R](fg:green)"
+
+modified="[M](fg:red)"
+deleted="[D](fg:red)"
+untracked="[?](fg:red)"
+
+style = ""
+format = '(:$staged$renamed$modified$deleted$untracked)$ahead_behind '
+
+
+[python]
+symbol = ""
+style = ""
+format = '[$symbol($version)(\($virtualenv\))]($style)'
+
+[docker_context]
+disabled = true
+symbol = ""
+style = ""
+format = '[$symbol($context)]($style)'
+
+[line_break]
+disabled = true
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:green)'
+error_symbol = '[❯](bold fg:red)'
+
+[cmd_duration]
+show_milliseconds = false
+format = "$duration "
+style = "bg:lavender"
+disabled = false
+show_notifications = true
+min_time = 60000
+
+[palettes.zkraus]
+green = "#000000"
+

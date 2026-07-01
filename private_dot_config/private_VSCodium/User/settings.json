@@ -1,0 +1,97 @@
+{
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block-outline",
+    "redhat.telemetry.enabled": false,
+    "python.createEnvironment.trigger": "off",
+    "python.terminal.activateEnvironment": true,
+    "explorer.compactFolders": false,
+    "vim.statusBarColors.visualline": "",
+    "editor.minimap.renderCharacters": false,
+    "workbench.iconTheme": "catppuccin-frappe",
+    "workbench.colorTheme": "Catppuccin Frappé",
+    "workbench.colorCustomizations": {
+        "editorCursor.background": "#303446",
+        "editorCursor.foreground": "#aaff00"
+    },
+    "files.trimTrailingWhitespace": true,
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoTriggerNextSuggestion": true,
+    "workbench.startupEditor": "none",
+    "update.showReleaseNotes": false,
+    "shellformat.useEditorConfig": true,
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#606060"
+        },
+        {
+            "column": 120,
+            "color": "#9f0000"
+        }
+    ],
+    "telemetry.feedback.enabled": false,
+    "make-task-provider.telemetry": false,
+    "yaml.schemas": {
+    },
+    "window.zoomLevel": 1,
+    "peacock.favoriteColors": [
+        {
+            "name": "Crust",
+            "value": "#232634"
+        },
+        {
+            "name": "Levander",
+            "value": "#babbf1"
+        },
+        {
+            "name": "Blue",
+            "value": "#8caaee"
+        },
+        {
+            "name": "Sapphire",
+            "value": "#85c1dc"
+        },
+        {
+            "name": "Teal",
+            "value": "#81c8be"
+        },
+        {
+            "name": "Green",
+            "value": "#a6d189"
+        },
+        {
+            "name": "Yellow",
+            "value": "#e5c890"
+        },
+        {
+            "name": "Peach",
+            "value": "#ef9f76"
+        },
+        {
+            "name": "Red",
+            "value": "#e78284"
+        },
+        {
+            "name": "Mauve",
+            "value": "#ca9ee6"
+        },
+        {
+            "name": "Flamingo",
+            "value": "#eebebe"
+        },
+        {
+            "name": "",
+            "value": ""
+        }
+    ],
+    "editor.fontFamily": "DroidSansM Nerd Font Mono",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "claudeCode.preferredLocation": "panel",
+    "githubPullRequests.pullBranch": "never",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
+}
