@@ -1,7 +1,7 @@
 [user]
     email = zdenek.kraus@gmail.com
     name = Zdenek Kraus
-	signingkey = 02B26AF82133A134
+	signingkey = 9AED9E80819D56A1
 
 [core]
     editor = vim

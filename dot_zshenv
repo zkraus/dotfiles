@@ -1,2 +1,10 @@
+# Claude code variables
+export CLAUDE_CODE_USE_VERTEX=1
+export CLOUD_ML_REGION=global
+export ANTHROPIC_VERTEX_PROJECT_ID=itpc-gcp-hcm-pe-eng-claude
+
+export REQUESTS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt
+
 # uv
 export PATH="/home/zkraus/.local/bin:$PATH"
+. "$HOME/.cargo/env"

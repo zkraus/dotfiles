@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+set -x
+
+IFS="
+"
+
+if [ ! -f /etc/fedora-release ]; then
+        echo "This is not a Fedora Linux"
+        exit 1
+fi
+
+enable_copr() {
+    COPR_PKG="${1:-$(pwd)/fedora/copr.txt}"
+
+    cat ${COPR_PKG} | xargs -L1 sudo dnf copr enable -y
+}
+
+install_dnf() {
+    DNF_PKG="${1:-$(pwd)/fedora/dnf.txt}"
+
+    echo "Installing Fedora Linux packages"
+    sudo dnf install -y $(cat $DNF_PKG)
+
+}
+
+# copr.txt hash: {{ include "install/copr.txt" | sha256sum }}
+enable_copr {{ joinPath .chezmoi.sourceDir "install/copr.txt" | quote }}
+
+# dnf.txt hash: {{ include "install/dnf.txt" | sha256sum }}
+install_dnf {{ joinPath .chezmoi.sourceDir "install/dnf.txt" | quote }}

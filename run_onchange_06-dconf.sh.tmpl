@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+set -x
+
+IFS="
+"
+
+# dconf_org.gnome.Ptyxis hash: {{ include "private_dot_config/zkraus/dconf_org.gnome.Ptyxis" | sha256sum }}
+cat ~/.config/zkraus/dconf_org.gnome.Ptyxis | dconf load /org/gnome/Ptyxis/

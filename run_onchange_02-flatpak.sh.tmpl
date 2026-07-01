@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+set -x
+
+IFS="
+"
+
+install_flatpak() {
+    FLATPAK_PKG="${1:-$(pwd)/flatpak.txt}"
+
+    cat "${FLATPAK_PKG}" | xargs -L1 flatpak install --noninteractive
+}
+
+# flatpak.txt hash: {{ include "install/flatpak.txt" | sha256sum }}
+install_flatpak {{ joinPath .chezmoi.sourceDir "install/flatpak.txt" | quote }}

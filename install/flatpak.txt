@@ -1,0 +1,11 @@
+flathub com.vscodium.codium
+flathub com.bitwarden.desktop
+flathub com.slack.Slack
+fedora org.gnome.Meld
+flathub org.gimp.GIMP
+flathub org.inkscape.Inkscape
+flathub md.obsidian.Obsidian
+flathub io.dbeaver.DBeaverCommunity
+fedora org.atheme.audacious
+flathub org.videolan.VLC
+fedora org.gnome.Extensions

@@ -11,13 +11,30 @@ autoload -U compinit; compinit
 alias pdflatex='docker run -it --rm -v "${PWD}:/root/shared/folder:z" --name pdflatex pdflatex'
 alias bw="flatpak run --command=bw com.bitwarden.desktop"
 alias k="kubectl"
-alias vi="vim"
+
+
+function zle-line-init() {
+    # Home keys
+    bindkey '\e[1~' beginning-of-line
+    bindkey '\e[H'  beginning-of-line
+    bindkey '\eOH'  beginning-of-line
+
+    # End keys
+    bindkey '\e[4~' end-of-line
+    bindkey '\e[F'  end-of-line
+    bindkey '\eOF'  end-of-line
+    
+    # Standard navigation safety nets
+    bindkey '\e[3~' delete-char
+    bindkey '\e[2~' overwrite-mode
+}
+zle -N zle-line-init
+
 
 export EDITOR='/usr/bin/vim'
 if [[ -e /usr/bin/nvim ]]; then
     export EDITOR='/usr/bin/nvim'
     alias vim="nvim"
-	alias vi="nvim"
 fi
 
 # kuadrant qe ocp-tool

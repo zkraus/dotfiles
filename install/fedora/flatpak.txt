@@ -1,6 +1,0 @@
-com.vscodium.codium
-com.bitwarden.desktop
-com.slack.Slack
-org.gnome.Meld
-org.gimp.GIMP
-org.inkscape.Inkscape

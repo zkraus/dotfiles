@@ -19,7 +19,12 @@ dnf_install() {
     echo "Installing Fedora Linux packages"
     sudo dnf install -y $(cat $DNF_PKG)
 
+
+
     # Managed fedora doesn't work, need a different way to change it
     # sudo usermod -s "$(which zsh)" "$USER"
+    # echo 'exec $(/usr/bin/env zsh)' >> ~/.bashrc
+
+
 }
 
