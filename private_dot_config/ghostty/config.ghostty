@@ -1,0 +1,19 @@
+cursor-color = #B3FF00
+cursor-style-blink = false
+cursor-style = block
+cursor-text = #303446
+
+shell-integration-features = no-cursor
+
+
+
+font-family = "DroidSansM Nerd Font Mono"
+
+theme = Catppuccin Frappe
+
+window-height = 40
+window-width = 142
+
+command = tmux attach-session -t ghostty || tmux new-session -s ghostty
+
+

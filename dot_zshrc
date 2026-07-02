@@ -30,6 +30,9 @@ function zle-line-init() {
 }
 zle -N zle-line-init
 
+# Force Ctrl+R to open reverse history search
+bindkey '^R' history-incremental-search-backward
+
 
 export EDITOR='/usr/bin/vim'
 if [[ -e /usr/bin/nvim ]]; then

@@ -1,0 +1,5 @@
+aztaskbar@aztaskbar.gitlab.com
+status-tray@keithvassallo.com
+background-logo@fedorahosted.org
+launch-new-instance@gnome-shell-extensions.gcampax.github.com
+clipboard-indicator@tudmotu.com
