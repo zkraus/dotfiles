@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+set -euo pipefail
+set -x
+
+IFS="
+"
+
+LOCAL_SHARE_FONTS="${HOME}/.local/share/fonts"
+
+install_nerdfonts() {
+    local nerdfonts="${1:-$(pwd)/nerdfonts.txt}"
+    echo $nerdfonts
+
+    mkdir -p "${LOCAL_SHARE_FONTS}"
+
+    while read line; do
+        echo $line
+        install_one_nerdfont "${line}"
+    done  <${nerdfonts}
+
+
+    # update font cache
+    fc-cache -fv
+}
+
+install_one_nerdfont() {
+    local URL="${1}"
+    local fn_zip="$(basename "${URL}")"
+
+    local tmp="/tmp/fonts"
+    local fp_zip="${tmp}/${fn_zip}"
+
+    mkdir -p "${tmp}"
+
+    # curl
+    if [[ ! -e ${fp_zip} ]]; then
+        curl -L -o "${fp_zip}" "${URL}"
+    fi
+
+    # unzip / untar
+    unzip -n -d ${LOCAL_SHARE_FONTS} "${fp_zip}"
+
+    # remove
+    # rm "${tmp}/${filename}"
+
+}
+
+# nerdfonts.txt hash: {{ include "install/nerdfonts.txt" | sha256sum }}
+install_nerdfonts {{ joinPath .chezmoi.sourceDir "install/nerdfonts.txt" | quote }}
