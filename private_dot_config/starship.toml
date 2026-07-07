@@ -23,6 +23,7 @@ add_newline = false
 #palette = 'catppuccin_mocha'
 
 [username]
+disabled = true
 show_always = false
 style_user = "bold fg:green"
 style_root = "bold fg:red"
@@ -30,8 +31,9 @@ format = '[$user]($style)'
 
 [hostname]
 disabled = false
-ssh_only = true
+ssh_only = false
 style = "bold fg:green"
+format = '[$ssh_symbol$hostname]($style) '
 ssh_symbol = "@"
 
 [directory]
@@ -67,7 +69,7 @@ style = ""
 format = '[$symbol($version)(\($virtualenv\))]($style)'
 
 [docker_context]
-disabled = true
+disabled = false
 symbol = ""
 style = ""
 format = '[$symbol($context)]($style)'
