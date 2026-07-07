@@ -1,4 +1,3 @@
-flathub com.vscodium.codium
 flathub com.bitwarden.desktop
 flathub com.slack.Slack
 fedora org.gnome.Meld

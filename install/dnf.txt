@@ -1,3 +1,4 @@
+codium
 docker-cli
 docker-compose
 fzf
