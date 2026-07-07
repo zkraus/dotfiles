@@ -6,4 +6,4 @@ IFS="
 "
 
 # extensions.txt has: {{ include "private_dot_config/zkraus/vscodium_extensions.txt" | sha256sum }}
-cat $HOME/.config/VSCodium/User/extensions.txt | xargs -L1 codium --install-extension
+cat $HOME/.config/zkraus/vscodium_extensions.txt | xargs -L1 codium --install-extension
