@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+set -x
+
+IFS="
+"
+
+mkdir -p $HOME/.local/share/mc/skins && cd $HOME/.local/share/mc/skins && git clone https://github.com/catppuccin/mc.git && ln -s -f ./mc/catppuccin.ini .
