@@ -4,5 +4,6 @@ set -x
 
 IFS="
 "
-
-mkdir -p $HOME/.local/share/mc/skins && cd $HOME/.local/share/mc/skins && git clone https://github.com/catppuccin/mc.git && ln -s -f ./mc/catppuccin.ini .
+if [ ! -d $HOME/.local/share/mc/skins/mc ]; then
+	mkdir -p $HOME/.local/share/mc/skins && cd $HOME/.local/share/mc/skins && git clone https://github.com/catppuccin/mc.git && ln -s -f ./mc/catppuccin.ini .
+fi
